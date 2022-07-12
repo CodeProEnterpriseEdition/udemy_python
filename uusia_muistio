@@ -1,0 +1,13 @@
+variable_pienellä_ja_ala_viivoilla(snake_case)
+
+CAPITAL_SANKE_CASE = viittaa pysyviin muuttujiin kuten PI = 3.14
+
+TämäTaasOlisiLuokanNimi(UpperCamelCase)
+
+__double__underscore = dunder methods
+    näihin ei pitäisi koskea?
+
+\ on escape caracter
+\n rivinvaihto
+
+käytä f string:iä stringien formatointiin jos voit.
