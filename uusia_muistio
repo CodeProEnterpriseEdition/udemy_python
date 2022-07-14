@@ -11,3 +11,15 @@ __double__underscore = dunder methods
 \n rivinvaihto
 
 käytä f string:iä stringien formatointiin jos voit.
+
+functioissa voi nimeämällä antaa parametrit välittämättä
+järjestyksestä.
+# def asdf(num, power): => keyword  parameters
+# asdf(power=3, num=2) => keyword arguments
+
+globaalia muuttujaa ei voi muuttaa functiossa.
+    pitää lisätä global muuttujan eteen
+
+nonlocal hakee ylemmän tason(aikaisemman function) muuttujista
+    kyseisen muuttujan function käyttöön.
+
