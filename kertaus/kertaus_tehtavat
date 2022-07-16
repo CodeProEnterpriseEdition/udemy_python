@@ -1,0 +1,28 @@
+# tehtävä 0
+    Tee lista, dict, tuple ja set
+    2-13, kolmen intervalleilla rangella
+
+# tehtävä 1
+    tee jokaisesta, joku list comprehension
+
+# tehtävä 2
+    Tee jokaisesta joku functio, jossa tarvitaan comprehensioita ja slicea
+
+# tehtävä 3
+Yhdistä kahden listan yhteiset arvot list comprehensionilla ja set:llä
+
+# tehtävä 4
+Käytä lambdaa filter function kanssa.
+
+# tehtävä 5
+Käytä max() functiossa key:tä. Esim. lista sanoista ja niistä pisin.
+
+# tehtävä 6 
+Tee lambda, joka palauttaa pienimmän ja isoimman iterablesta
+
+# tehtävä 7
+Käytä slicea 3 kertaa
+
+# tehtävä 8 
+Tee functio, joka palauttaa max_magnituden listasta
+

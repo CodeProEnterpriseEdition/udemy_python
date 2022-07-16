@@ -25,10 +25,54 @@ print("dict_comprehensins", squared_numbers)
 print(set(list_1) | set(list_2))
 # vain yhteiset arvot
 print(set(list_1) & set(list_2))
-# tehtävä 1
+# tehtävä 2
 
 
-# tehtävä 1
+# tehtävä 3
 
 
-# tehtävä 1
+# tehtävä 4 Käytä lambdaa filter function kanssa.
+b = list(range(11))
+print(list(filter(lambda n: n%2 ==0, b)))
+
+# tehtävä 5 Käytä max() functiossa key:tä. Esim. lista sanoista ja niistä pisin.
+
+names = ("Arya", "Samson", "Dore", "Tim", "ollicander")
+print(min(names, key=len))
+
+# tehtävä 6 Tee lambda, joka palauttaa pienimmän ja isoimman iterablesta
+lst = [1,2,3,4,5]
+nums = [99, 25, 30 ,-7]
+name = 'alcatraz'
+
+extremes = lambda iterable: (min(iterable), max(iterable))
+
+print(extremes(lst))
+print(extremes(nums))
+print(extremes(name))
+
+
+# tehtävä 7 Käytä slicea kolme kertaa
+name = 'alcatraz'
+print(name[::-1])
+print(name[:3])
+print(name[3:])
+
+
+
+# tehtävä 8 Tee functio, joka palauttaa max_magnituden listasta
+max_lst1 = [300, 20 ,-900]
+max_lst2 = [10,11,12]
+max_lst3 = [-5,-1-89]
+
+def max_magnitude(lst):
+     return max(lst, key=lambda n: abs(n))
+
+print(max_magnitude(max_lst1))
+print(max_magnitude(max_lst2))
+print(max_magnitude(max_lst3))
+
+
+
+
+# tehtävä 3
