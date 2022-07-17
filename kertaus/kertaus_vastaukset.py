@@ -99,5 +99,16 @@ def divide(num1, num2):
 print(divide(1, 2))
 print(divide(1, "peruna"))
 
-# tehtävä 3
+# tehtävä 11 Tee functio, joka ottaa listan ja muuttujan.
+# Palauttaa True jos muuttuja on listassa ja False jos ei ole.
+
+
+def onko(*args):
+    if 3 in args:
+        return True
+    return False
+
+
+print(onko(1, 2, 3, 4, 5))
+print(onko(1, 2, 4, 5))
 # tehtävä 3
