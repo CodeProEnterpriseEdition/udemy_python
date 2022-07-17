@@ -72,7 +72,13 @@ print(max_magnitude(max_lst1))
 print(max_magnitude(max_lst2))
 print(max_magnitude(max_lst3))
 
+# tehtävä 9 Käytä zippiä yhdistämään kaksi listaa
+names = ['paavola', 'pekka', 'maija', 'maja']
+scores = [123,22,51]
+names_scores = (dict(zip(names,scores)))
 
 
 
+# tehtävä 3
+# tehtävä 3
 # tehtävä 3

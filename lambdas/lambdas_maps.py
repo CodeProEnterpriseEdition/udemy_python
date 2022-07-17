@@ -1,11 +1,8 @@
 def square(num): return num * num
 
-
 print(square(9))
 
-
 def square2(num): return num * num
-
 
 def add_values(x, y): return x + y
 # korottaa annetun luvun kolmanteen potenssiin

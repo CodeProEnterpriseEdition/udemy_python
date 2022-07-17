@@ -24,7 +24,8 @@ def max_magnitude(lst):
 print(max_magnitude(max_lst1))
 print(max_magnitude(max_lst2))
 print(max_magnitude(max_lst3))
-
+print("--------")
+print(list(abs(n) for n in max_lst1))
 def max_magnitude(lst):
     return max(abs(n) for n in lst)
 print(max_magnitude(max_lst1))

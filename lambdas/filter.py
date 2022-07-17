@@ -14,3 +14,27 @@ def remove_negatives(list1):
 
 
 print(remove_negatives([0, 1, 2, 3, -2, -5]))
+
+print("--------------")
+
+def triple_and_filter(numbers):
+    filtered = filter(lambda n: n%4==0, numbers)
+    return [n*3 for n in filtered]
+
+lst = [1,2,3,4,5,6,12,22,24]
+
+print(triple_and_filter(lst))
+
+def triple_and_filter(numbers):
+    return [n*3 for n in numbers if n%4==0]
+
+lst = [1,2,3,4,5,6,12,22,24]
+
+print(triple_and_filter(lst))
+
+def triple_and_filter(numbers):
+    return [n*3 for n in numbers if n%4==0]
+
+lst = [1,2,3,4,5,6,12,22,24]
+
+print(triple_and_filter(lst))
