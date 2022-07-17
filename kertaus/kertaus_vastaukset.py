@@ -33,7 +33,7 @@ print(set(list_1) & set(list_2))
 
 # tehtävä 4 Käytä lambdaa filter function kanssa.
 b = list(range(11))
-print(list(filter(lambda n: n%2 ==0, b)))
+print(list(filter(lambda n: n % 2 == 0, b)))
 
 # tehtävä 5 Käytä max() functiossa key:tä. Esim. lista sanoista ja niistä pisin.
 
@@ -41,11 +41,13 @@ names = ("Arya", "Samson", "Dore", "Tim", "ollicander")
 print(min(names, key=len))
 
 # tehtävä 6 Tee lambda, joka palauttaa pienimmän ja isoimman iterablesta
-lst = [1,2,3,4,5]
-nums = [99, 25, 30 ,-7]
+lst = [1, 2, 3, 4, 5]
+nums = [99, 25, 30, -7]
 name = 'alcatraz'
 
-extremes = lambda iterable: (min(iterable), max(iterable))
+
+def extremes(iterable): return (min(iterable), max(iterable))
+
 
 print(extremes(lst))
 print(extremes(nums))
@@ -59,14 +61,15 @@ print(name[:3])
 print(name[3:])
 
 
-
 # tehtävä 8 Tee functio, joka palauttaa max_magnituden listasta
-max_lst1 = [300, 20 ,-900]
-max_lst2 = [10,11,12]
-max_lst3 = [-5,-1-89]
+max_lst1 = [300, 20, -900]
+max_lst2 = [10, 11, 12]
+max_lst3 = [-5, -1-89]
+
 
 def max_magnitude(lst):
-     return max(lst, key=lambda n: abs(n))
+    return max(lst, key=lambda n: abs(n))
+
 
 print(max_magnitude(max_lst1))
 print(max_magnitude(max_lst2))
@@ -74,11 +77,27 @@ print(max_magnitude(max_lst3))
 
 # tehtävä 9 Käytä zippiä yhdistämään kaksi listaa
 names = ['paavola', 'pekka', 'maija', 'maja']
-scores = [123,22,51]
-names_scores = (dict(zip(names,scores)))
+scores = [123, 22, 51]
+names_scores = (dict(zip(names, scores)))
 
 
+# tehtävä 10 Käytä try except (else, finally) rakennetta functiossa
 
-# tehtävä 3
+def divide(num1, num2):
+    try:
+        results = num1//num2
+    except TypeError:
+        return "Give int or float"
+    except ZeroDivisionError:
+        return "don't divide with zero"
+    else:
+        return results
+    finally:
+        print("good work")
+
+
+print(divide(1, 2))
+print(divide(1, "peruna"))
+
 # tehtävä 3
 # tehtävä 3

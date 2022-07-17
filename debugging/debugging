@@ -1,6 +1,6 @@
 # common errors / yleisimmät virheet
 - SyntaxError
-    Johtuu: 
+    Johtuu:
         - typot ja ettei tiedä pythonia tarpeeksi hyvin
         def hemuli: = SyntaxError: invalid syntax
 - NameError
@@ -12,6 +12,10 @@
         - operaatio tai functiota käytetään väärän tyyppiseen muuttujaan
         len(5) = TypeError: object of type 'int' has no len()
         "awesome" + [] = TypeError: can only concatenate str (not "list") to str
+
+        def add(a,b):
+            return a+b
+        add(1)      => Type error
 
 - IndexError
     Johtuu:

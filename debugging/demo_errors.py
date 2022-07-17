@@ -1,26 +1,32 @@
-import antigravity
-    # SyntaxError
+# import antigravity
+# SyntaxError
 # def hemuli:
 
-    # NameErrors
+# NameErrors
 # print(paavo)
 
-
-    #  TypeErrors
+#  TypeErrors
 # len(5)
 # "awesome" + []
 
-    # IndexError
+
+def add(a, b):
+    return a+b
+
+
+add(1)
+
+# IndexError
 # lst = [1,2]
 # print(lst[3])
 
-    # ValueError
+# ValueError
 # int("foo")
 
-    # KeyError
+# KeyError
 # names = {"name": "maija"}
 # print(names["lastname"])
 
-    # AttributeError
+# AttributeError
 # "awesome".foo
 # "awesome".foo()
