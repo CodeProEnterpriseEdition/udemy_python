@@ -24,3 +24,12 @@ print(lst_comp)
 # output      for loop          conditional for every number
 dict_comp = {key: value   for key, value in dictionary1.items() if value >2}
 print(dict_comp)
+
+
+#  method   vs    function
+# https://techvidvan.com/tutorials/python-methods-vs-functions/
+
+# Functioita on kahdenlaisia BuiltIn functioita 
+# ja käyttäjän luomia functioita
+
+# Methods represent the behavior of an Object.

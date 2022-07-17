@@ -1,0 +1,42 @@
+# common errors / yleisimmät virheet
+- SyntaxError
+    Johtuu: 
+        - typot ja ettei tiedä pythonia tarpeeksi hyvin
+        def hemuli: = SyntaxError: invalid syntax
+- NameError
+    Johtuu:
+        - muuttujaa ei ole määritelty
+        print(paavo) = NameError: name 'paavo' is not defined
+- TypeError
+    Johtuu:
+        - operaatio tai functiota käytetään väärän tyyppiseen muuttujaan
+        len(5) = TypeError: object of type 'int' has no len()
+        "awesome" + [] = TypeError: can only concatenate str (not "list") to str
+
+- IndexError
+    Johtuu:
+        - kun yrität valita listassa elementtiä, joka on listan ulkopuolella
+        lst = [1,2]
+        print(lst[3]) = IndexError: list index out of range
+
+- ValueError
+    Johtuu:
+        - kun builtIn operaatio tai functio saa oikean tyyppisen, mutta väärän
+          arvon
+        int("foo") = ValueError: invalid literal for int() with base 10: 'foo'
+
+- KeyError
+    Johtuu:
+        - kun dictionarystä haetaan avaimella mitä siinä ei ole
+        names = {"name": "maija"}
+        print(names["lastname"]) = KeyError: 'lastname'
+
+- AttributeError
+    Johtuu:
+        - kun muuttujalla ei ole kyseistä attribuuttia/methodia
+        "awesome".foo() tai
+        "awesome".foo = AttributeError: 'str' object has no attribute 'foo'
+
+# pdb => set breakpoints and step through code
+
+# try except block to handle errors
