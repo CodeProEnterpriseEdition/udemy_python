@@ -1,4 +1,7 @@
 
+from logging.config import dictConfig
+
+
 first_zip= zip([1,2,3], [4,5,6])
 print(list(first_zip))
 first_zip= zip([1,2,3], [4,5,6])
@@ -56,3 +59,6 @@ def interleave(str1,str2):
     return ''.join(''.join(x) for x in (zip(str1,str2)))
 
 print(interleave("hi", "ha"))
+
+print("---------------")
+

@@ -39,3 +39,10 @@ print(answer)
 answer = {count: chr(count) for count in range(65, 91)}
 print(answer)
 print(chr(65))
+
+print("----------------------")
+names = [{'first': 'Elie', 'last': 'Schoppik'}, {'first': 'Colt', 'last': 'Steele'}]
+def extract_full_name(dict_lst):
+    return [dictx['first'] + " " + dictx['last'] for dictx in dict_lst]
+
+print(extract_full_name(names))
