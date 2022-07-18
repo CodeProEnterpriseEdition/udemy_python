@@ -111,4 +111,21 @@ def onko(*args):
 
 print(onko(1, 2, 3, 4, 5))
 print(onko(1, 2, 4, 5))
+# tehtävä 12 Mihin Super() viittaa ja 
+# miten mro = method resolution order saadaan selville
+"""Super viittaa parent luokkaan.
+    print(ClassName.mro()) , missä ClassName on luokka
+    ClassName.__mro__
+    ClassName.mro()
+    help(ClassName)
+"""
+
+# tehtävä 13 Mitä properties on kätevä?
+"""Properties voit luoda gettereitä ja settereitä
+    @property
+    def age(self):
+        return self._age
+
+"""
+# tehtävä 3
 # tehtävä 3
