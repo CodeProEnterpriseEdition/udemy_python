@@ -28,7 +28,12 @@ print(set(list_1) & set(list_2))
 # tehtävä 2
 
 
-# tehtävä 3
+# tehtävä 3 Mitä eroa on functiolla ja methodilla
+"""
+- methodi on instanssin functio
+- functio taas on builtIn functio tai käyttäjän luoma riippumaton
+functio
+"""
 
 
 # tehtävä 4 Käytä lambdaa filter function kanssa.
