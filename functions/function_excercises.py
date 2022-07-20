@@ -51,6 +51,10 @@ def multiple_letter_count(text):
 
 
 def multiple_letter_count(string):
+    """
+    >>> multiple_letter_count('awesome')
+    {'a': 1, 'w': 1, 'e': 2, 's': 1, 'o': 1, 'm': 1}
+    """
     return {letter: string.count(letter) for letter in string}
 
 
@@ -73,6 +77,12 @@ def list_manipulation(collection, command, location, value=None):
 
 
 def list_manipulation(collection, command, location, value=None):
+    """
+    >>> list_manipulation(list(range(10)), "remove", "end")
+    9
+    >>> list_manipulation(list(range(10)), "remove", "beginning")
+    0
+    """
     if(command == "remove" and location == "end"):
         return collection.pop()
     elif(command == "remove" and location == "beginning"):
