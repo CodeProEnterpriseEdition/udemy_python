@@ -1,6 +1,13 @@
 import unittest
 from activities import drinks
 
+"""
+testejä voi ajaa python filenimi, kunhan 
+if __name__ == "__main__":
+    unittest.main()
+
+on olemassa.
+"""
 
 class ActivityTests(unittest.TestCase):
     def setUp(self):

@@ -1,4 +1,6 @@
+from itertools import count
 from random import shuffle
+import unittest
 # Each instance of Card  should have a suit ("Hearts", "Diamonds", "Clubs", or "Spades").
 # Each instance of Card  should have a value ("A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K").
 # Card 's __repr__  method should display the card's value and suit (e.g. "A of Clubs", "J of Diamonds", etc.)
@@ -56,17 +58,51 @@ class Deck:
 		return self
 
 
+class CardTests(unittest.TestCase):
+	def setUp(self):
+		self.card = Card("A", "Hearts")
+		print("setup complete")
+
+	def test_create_card(self):
+		self.assertEqual(self.card.suit, 'Hearts')
+		self.assertEqual(self.card.value, 'A')
+
+	def test_repr(self):
+		self.assertEqual(repr(self.card), "A of Hearts")
+
+class DeckTests(unittest.TestCase):
+	def setUp(self):
+		self.deck = Deck()
+
+	def test_new_deck_count(self):
+		self.assertTrue(isinstance(self.deck.cards, list))
+		self.assertEqual(self.deck.count(), 52)
+
+	def test_pop(self):
+		self.assertEqual(self.deck.count(), 52)
+		self.deck.cards.pop()
+		self.assertEqual(self.deck.count(), 51)
+		
+	def test_deal_no_cards(self):
+		self.deck._deal(self.deck.count())
+		with self.assertRaises(ValueError):
+			self.deck._deal(1)
+
+if __name__ == "__main__":
+    unittest.main()
+		
+
 d = Deck()
 d.shuffle()
 card = d.deal_card()
 print(card)
-hand = d.deal_hand(50)
+hand = d.deal_hand(5)
 card2 = d.deal_card()
 print(card2)
 print(d.cards)
 card2 = d.deal_card()
 
-# print(d.cards)
+print(d.cards)
 
 
 
