@@ -61,9 +61,9 @@ print(extremes(name))
 
 # tehtävä 7 Käytä slicea kolme kertaa
 name = 'alcatraz'
-print(name[::-1])
-print(name[:3])
-print(name[3:])
+print(name[::-1]) # reverse 
+print(name[:3]) # lopettaa kolmanteen merkkiin
+print(name[3:]) # aloittaa kolmannen merkin kohdalta
 
 
 # tehtävä 8 Tee functio, joka palauttaa max_magnituden listasta
@@ -132,5 +132,19 @@ print(onko(1, 2, 4, 5))
         return self._age
 
 """
-# tehtävä 3
-# tehtävä 3
+# tehtävä 14 Millä kannattaa lukea tiedostoja
+"""
+from csv import reader 
+tai
+from csv import DictReader
+samat kirjoitukselle
+"""
+# tehtävä 15 Millä hyppäät ensimmäisen rivin yli csv tiedostossa
+"""
+    next(csv_reader)
+"""
+
+
+# tehtävä 15
+# tehtävä 15
+# tehtävä 15
