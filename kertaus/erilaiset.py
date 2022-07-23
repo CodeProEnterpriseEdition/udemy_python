@@ -1,8 +1,9 @@
 lst = [1, 2, 3]
 dictionary1 = {'eka': 1, 'toka': 2, 'kolmas': 3}
+# ordered and unchangeable
 tuple1 = (1, 2, 3)
+# unordered, and unindexed.
 set1 = {1, 2, 3}
-
 print(lst)
 print(dictionary1)
 print(tuple1)
@@ -33,3 +34,5 @@ print(dict_comp)
 # ja käyttäjän luomia functioita
 
 # Methods represent the behavior of an Object.
+
+
