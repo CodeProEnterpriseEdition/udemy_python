@@ -61,9 +61,9 @@ print(extremes(name))
 
 # tehtävä 7 Käytä slicea kolme kertaa
 name = 'alcatraz'
-print(name[::-1]) # reverse 
-print(name[:3]) # lopettaa kolmanteen merkkiin
-print(name[3:]) # aloittaa kolmannen merkin kohdalta
+print(name[::-1])  # reverse
+print(name[:3])  # lopettaa kolmanteen merkkiin
+print(name[3:])  # aloittaa kolmannen merkin kohdalta
 
 
 # tehtävä 8 Tee functio, joka palauttaa max_magnituden listasta
@@ -116,7 +116,7 @@ def onko(*args):
 
 print(onko(1, 2, 3, 4, 5))
 print(onko(1, 2, 4, 5))
-# tehtävä 12 Mihin Super() viittaa ja 
+# tehtävä 12 Mihin Super() viittaa ja
 # miten mro = method resolution order saadaan selville
 """Super viittaa parent luokkaan.
     print(ClassName.mro()) , missä ClassName on luokka
@@ -134,7 +134,7 @@ print(onko(1, 2, 4, 5))
 """
 # tehtävä 14 Millä kannattaa lukea tiedostoja
 """
-from csv import reader 
+from csv import reader
 tai
 from csv import DictReader
 samat kirjoitukselle
@@ -145,6 +145,10 @@ samat kirjoitukselle
 """
 
 
-# tehtävä 15
+# tehtävä 15 Miten saat emailin tai url:n tekstistä regex:llä
+#            Yhtenä vastauksena tai useammassa osassa
+url = "https?://[A-Za-z.-]+\.[A-Za-z]+"
+url = "(https?://)([A-Za-z.-]+\.[A-Za-z]+)"
+
 # tehtävä 15
 # tehtävä 15
