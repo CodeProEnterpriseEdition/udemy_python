@@ -24,3 +24,5 @@ nonlocal hakee ylemmän tason(aikaisemman function) muuttujista
     kyseisen muuttujan function käyttöön.
 
 lambda = anonymous function
+
+regex = regular expression
