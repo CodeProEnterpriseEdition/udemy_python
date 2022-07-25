@@ -1,0 +1,49 @@
+
+-- Character classes
+-- [] luokitellaan näillä suluilla
+
+[aeiou]{2}
+eli kaksi mitä tahansa mikä on "aeiou"
+
+-- yleisiä
+[a-z] => kaikki pienet kirjaimet
+[A-Z] => kaikki ISOT kirjaimet
+
+[A-z]{2,} => antaa kaikki pätkät missä on 2 tai enemmän
+             isoja kirjaimia putkeen
+
+[^] => ^ on NOT merkki
+[^a-z] => eli ei pieniä kirjaimia
+
+
+-- Anchors and Boundaries
+^ start of string or line
+$ End of string or line
+\b word boundary
+
+^ merkillä voidaan ilmoittaa koska ko. string alkaa
+eli ko. stringin osan pitää olla ensimmäisenä
+^d{3} \d{3}-?\d{4}
+
+$ merkillä voidan ilmoittaa että stringin osan pitää
+olla viimeisenä
+
+\b viittaa joko välilyöntiin tai rivinvaihtoon.
+Asioihin jotka usein ovat sanojen alussa/lopussa.
+
+-- OR merkki on | pipe merkki
+-- ehdot laitetaan sulkujen sisään, ja erotetaan toisistaa
+| merkillä
+(ehto | ehto)
+
+esimerkki:
+(\d{3}|\(\d{3}\)) \d{3}-?\d{4}
+
+(310) 467-9876
+310 467-9876
+
+-- suluilla ilman \ voidaan jakaa tulos useampaan osaan, kun käytetään
+-- pythonia
+
+url = "https?://[A-Za-z.-]+\.[A-Za-z]+"
+url = "(https?://)([A-Za-z.-]+\.[A-Za-z]+)"
