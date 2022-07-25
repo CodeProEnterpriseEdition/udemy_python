@@ -47,3 +47,15 @@ esimerkki:
 
 url = "https?://[A-Za-z.-]+\.[A-Za-z]+"
 url = "(https?://)([A-Za-z.-]+\.[A-Za-z]+)"
+
+
+--
+- normaali search hakee osumaa mistä vaan, ja palauttaa ensimmäisen
+- findall palauttaa kaikki osumat
+- fullmatch palauttaa vain täydelliset osumat
+
+.group() methodilla saat vastaukset selkokielisinä ulos
+
+
+-- compilation flags
+
